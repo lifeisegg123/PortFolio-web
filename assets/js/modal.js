@@ -5,7 +5,10 @@ const modalSection = document.querySelector(".contents__modal--content");
 
 const deltaRB = {
   name: "deltaRB",
-  imgs: ["/assets/img/delta1.jpg", "/assets/img/delta2.jpg"],
+  imgs: [
+    "/PortFolio-web/assets/img/delta1.jpg",
+    "/PortFolio-web/assets/img/delta2.jpg",
+  ],
   texts: "얼굴을 인식하여 엣지를 추출한 후 영상을 탐색하여 그림을 그리는 로봇",
   link: "https://github.com/lifeisegg123/delta_robot",
 };

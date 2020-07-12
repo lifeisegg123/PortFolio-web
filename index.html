@@ -12,11 +12,11 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>PortFolio Lee.J.J</title>
+    <title>PortFolios Lee.J.J</title>
   </head>
   <body>
     <header id="home">
-      <h1>PortFolio</h1>
+      <h1>PortFolios</h1>
       <h2>Lee.J.J</h2>
     </header>
     <nav class="nav">
@@ -53,11 +53,50 @@
           <div class="contents__keywords contents__ability--title">
             Ablility
           </div>
-          <div class="contents__texts">ddddddd</div>
+          <div class="contents__texts">
+            <section>
+              <h2>Languages</h2>
+              <img src="assets/img/c++.png" alt="C++" class="contents__icons" />
+              <img
+                src="assets/img/python.png"
+                alt="Python"
+                class="contents__icons"
+              />
+              <img
+                src="assets/img/html.png"
+                alt="HTML"
+                class="contents__icons"
+              />
+              <img src="assets/img/css.png" alt="CSS" class="contents__icons" />
+              <img
+                src="assets/img/js.png"
+                alt="JavaScript"
+                class="contents__icons"
+              />
+            </section>
+            <section>
+              <h2>ETC</h2>
+              <img src="assets/img/ros.png" alt="ROS" class="contents__icons" />
+            </section>
+          </div>
         </section>
         <section class="contents__content jsWorks" id="jsSlide">
           <div class="contents__keywords contents__works--title">Works</div>
-          <div class="contents__texts">ddddddd</div>
+          <div class="contents__texts">
+            <section class="contents__works--content" id="jsModalBtn">
+              <img
+                src="assets/img/delta1.jpg"
+                alt="deltaRB"
+                class="contents__works--imgs"
+              />
+              <p>Delta Robot</p>
+            </section>
+          </div>
+          <div class="contents__modal hidden">
+            <div class="contents__modal--overlay">
+              <section class="contents__modal--content"></section>
+            </div>
+          </div>
         </section>
       </div>
       <button class="contents__btn" id="jsRightBtn">
@@ -72,5 +111,6 @@
     </footer>
     <script src="assets/js/slide.js"></script>
     <script src="assets/js/navbuttons.js"></script>
+    <script src="assets/js/modal.js"></script>
   </body>
 </html>

@@ -293,16 +293,13 @@ header h2 {
   display: none;
 }
 
-footer {
-  bottom: 0;
-}
-
 .contact {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: rgb(56, 56, 56);
   color: #ebf0f2;
-  position: relative;
   margin: auto;
-  padding-bottom: 8px;
   opacity: 0.9;
 }
 

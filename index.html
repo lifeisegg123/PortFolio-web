@@ -22,7 +22,9 @@
     <nav class="nav">
       <ul>
         <li>
-          <button class="nav__btn nav__active" id="jsNavBtn">Who I Am</button>
+          <button class="nav__btn nav__active" id="jsNavBtn">
+            Introduction
+          </button>
         </li>
         <li><button class="nav__btn" id="jsNavBtn">Ability</button></li>
         <li><button class="nav__btn" id="jsNavBtn">Works</button></li>
@@ -33,7 +35,10 @@
         <i class="fas fa-arrow-circle-left"></i>
       </button>
       <div class="slides">
-        <section class="contents__content contents__active" id="jsSlide">
+        <section
+          class="contents__content contents__active jsIntroduction"
+          id="jsSlide"
+        >
           <div class="contents__keywords">Who I Am</div>
           <div class="contents__texts">
             <h1>주니어 개발자가 되기 위해</h1>
@@ -44,12 +49,14 @@
             </p>
           </div>
         </section>
-        <section class="contents__content" id="jsSlide">
-          <div class="contents__keywords ability">Ablility</div>
+        <section class="contents__content jsAbility" id="jsSlide">
+          <div class="contents__keywords contents__ability--title">
+            Ablility
+          </div>
           <div class="contents__texts">ddddddd</div>
         </section>
-        <section class="contents__content" id="jsSlide">
-          <div class="contents__keywords works">Works</div>
+        <section class="contents__content jsWorks" id="jsSlide">
+          <div class="contents__keywords contents__works--title">Works</div>
           <div class="contents__texts">ddddddd</div>
         </section>
       </div>
@@ -64,5 +71,6 @@
       </ul>
     </footer>
     <script src="assets/js/slide.js"></script>
+    <script src="assets/js/navbuttons.js"></script>
   </body>
 </html>

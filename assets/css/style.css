@@ -16,10 +16,12 @@ header {
   border-bottom: 2px solid #ebf0f2;
   border-radius: 5%;
 }
+
 header h1 {
   text-align: center;
   white-space: nowrap;
 }
+
 header h2 {
   font-size: 25px;
 }
@@ -43,10 +45,13 @@ header h2 {
   background: none;
   font-size: 18px;
 }
+
 .nav__btn:hover {
   cursor: pointer;
 }
+
 .nav__active {
+  outline: none;
   background: fixed;
   background-color: #ebf0f2;
   color: #24292e;
@@ -74,12 +79,67 @@ header h2 {
   align-items: center;
 }
 
+.contents__animation--left {
+  animation-name: movingBoxLeft;
+  animation-duration: 100ms;
+  animation-iteration-count: 1;
+}
+
+.contents__animation--right {
+  animation-name: movingBoxRight;
+  animation-duration: 100ms;
+  animation-iteration-count: 1;
+}
+
+@keyframes movingBoxLeft {
+  0% {
+    transform: translate(400px, 0px);
+    opacity: 0.3;
+  }
+
+  25% {
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: translate(200px, 0px);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 0.8;
+  }
+}
+
+@keyframes movingBoxRight {
+  0% {
+    transform: translate(-400px, 0px);
+    opacity: 0.3;
+  }
+
+  25% {
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: translate(-200px, 0px);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 0.8;
+  }
+}
+
 .contents__btn {
   background: none;
   border: none;
   height: 25px;
   font-size: 20px;
 }
+
 .contents__btn:hover {
   cursor: pointer;
 }
@@ -100,21 +160,26 @@ header h2 {
 .contents__texts {
   padding-left: 20px;
 }
+
 .contents__texts h1 {
   font-size: 20px;
   white-space: nowrap;
 }
-.ability {
+
+.contents__ability--title {
   margin-left: 10px;
-  padding-right: 19px;
+  padding-right: 22px;
 }
-.works {
+
+.contents__works--title {
   margin-left: 10px;
-  padding-right: 24px;
+  padding-right: 30px;
 }
+
 footer {
   bottom: -4px;
 }
+
 .contact {
   background-color: rgb(56, 56, 56);
   color: #ebf0f2;
@@ -123,6 +188,7 @@ footer {
   padding-bottom: 8px;
   opacity: 0.9;
 }
+
 .contact ul {
   display: flex;
   flex-direction: column;
@@ -131,6 +197,7 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+
 .contact ul li span {
   padding: 0px 10px;
 }

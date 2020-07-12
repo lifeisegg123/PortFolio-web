@@ -15,9 +15,13 @@ function handleLeftBtn() {
     currentSlide.classList.remove("contents__active");
     let prev = currentSlide.previousElementSibling;
     if (prev) {
+      prev.classList.remove("contents__animation--right");
       prev.classList.add("contents__active");
+      prev.classList.add("contents__animation--left");
     } else {
+      lastSlide.classList.remove("contents__animation--right");
       lastSlide.classList.add("contents__active");
+      lastSlide.classList.add("contents__animation--left");
     }
   }
   if (currentNav) {
@@ -36,19 +40,24 @@ function handleRightBtn() {
   const currentNav = document.querySelector(".nav__active");
   if (currentSlide) {
     currentSlide.classList.remove("contents__active");
-    let prev = currentSlide.nextElementSibling;
-    if (prev) {
-      prev.classList.add("contents__active");
+    let next = currentSlide.nextElementSibling;
+
+    if (next) {
+      next.classList.remove("contents__animation--left");
+      next.classList.add("contents__active");
+      next.classList.add("contents__animation--right");
     } else {
+      firstSlide.classList.remove("contents__animation--left");
       firstSlide.classList.add("contents__active");
+      firstSlide.classList.add("contents__animation--right");
     }
   }
   if (currentNav) {
     currentNav.classList.remove("nav__active");
-    prev = currentNav.parentElement.nextElementSibling;
-    if (prev) {
-      prev = prev.firstElementChild;
-      prev.classList.add("nav__active");
+    next = currentNav.parentElement.nextElementSibling;
+    if (next) {
+      next = next.firstElementChild;
+      next.classList.add("nav__active");
     } else {
       firstNavBtn.classList.add("nav__active");
     }

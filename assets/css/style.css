@@ -4,10 +4,7 @@ body {
   background-image: url(/assets/img/background.jpg);
   min-width: 480px;
 }
-a {
-  text-decoration: none;
-  color: black;
-}
+
 header {
   padding: 10px 0px;
   margin: 50px auto;
@@ -39,8 +36,22 @@ header h2 {
   opacity: 0.7;
 }
 
-.nav ul li a {
+.nav__btn {
   color: #ebf0f2;
+  text-decoration: none;
+  border: none;
+  background: none;
+  font-size: 18px;
+}
+.nav__btn:hover {
+  cursor: pointer;
+}
+.nav__active {
+  background: fixed;
+  background-color: #ebf0f2;
+  color: #24292e;
+  border-radius: 10%;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .contents {
@@ -48,6 +59,7 @@ header h2 {
   width: 70vw;
   height: 60vh;
   display: flex;
+  justify-content: space-around;
   align-items: center;
   background-color: #ebf0f2;
   border: 1px solid #d3d8d9;
@@ -59,6 +71,7 @@ header h2 {
   margin: auto;
   width: 55vw;
   display: none;
+  align-items: center;
 }
 
 .contents__btn {
@@ -71,9 +84,9 @@ header h2 {
   cursor: pointer;
 }
 
-.active {
+.contents__active {
   display: flex;
-  align-items: center;
+  z-index: 1;
 }
 
 .contents__keywords {
@@ -98,6 +111,9 @@ header h2 {
 .works {
   margin-left: 10px;
   padding-right: 24px;
+}
+footer {
+  bottom: -4px;
 }
 .contact {
   background-color: rgb(56, 56, 56);

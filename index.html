@@ -21,34 +21,38 @@
     </header>
     <nav class="nav">
       <ul>
-        <li><a href="#introduction">Who I Am</a></li>
-        <li><a href="#ability">Ability</a></li>
-        <li><a href="#works">Works</a></li>
+        <li>
+          <button class="nav__btn nav__active" id="jsNavBtn">Who I Am</button>
+        </li>
+        <li><button class="nav__btn" id="jsNavBtn">Ability</button></li>
+        <li><button class="nav__btn" id="jsNavBtn">Works</button></li>
       </ul>
     </nav>
     <div class="contents">
       <button class="contents__btn" id="jsLeftBtn">
         <i class="fas fa-arrow-circle-left"></i>
       </button>
-      <section class="contents__content active" id="introduction jsSlide">
-        <div class="contents__keywords">Who I Am</div>
-        <div class="contents__texts">
-          <h1>주니어 개발자가 되기 위해</h1>
-          <br />
-          <p>
-            비록 전공자는 아니지만 교내 로봇 동아리에서 프로그래밍을 하게 되어
-            프로그래밍에 흥미를 가졌습니다.
-          </p>
-        </div>
-      </section>
-      <section class="contents__content" id="ability jsSlide">
-        <div class="contents__keywords ability">Ablility</div>
-        <div class="contents__texts">ddddddd</div>
-      </section>
-      <section class="contents__content" id="works jsSlide">
-        <div class="contents__keywords works">Works</div>
-        <div class="contents__texts">ddddddd</div>
-      </section>
+      <div class="slides">
+        <section class="contents__content contents__active" id="jsSlide">
+          <div class="contents__keywords">Who I Am</div>
+          <div class="contents__texts">
+            <h1>주니어 개발자가 되기 위해</h1>
+            <br />
+            <p>
+              비록 전공자는 아니지만 교내 로봇 동아리에서 프로그래밍을 하게 되어
+              프로그래밍에 흥미를 가졌습니다.
+            </p>
+          </div>
+        </section>
+        <section class="contents__content" id="jsSlide">
+          <div class="contents__keywords ability">Ablility</div>
+          <div class="contents__texts">ddddddd</div>
+        </section>
+        <section class="contents__content" id="jsSlide">
+          <div class="contents__keywords works">Works</div>
+          <div class="contents__texts">ddddddd</div>
+        </section>
+      </div>
       <button class="contents__btn" id="jsRightBtn">
         <i class="fas fa-arrow-circle-right"></i>
       </button>
@@ -59,6 +63,6 @@
         <li><span>E-Mail </span><span>leejj2002@naver.com</span></li>
       </ul>
     </footer>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slide.js"></script>
   </body>
 </html>

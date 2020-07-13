@@ -107,7 +107,7 @@ header h2 {
 
 @keyframes movingBoxLeft {
   0% {
-    transform: translate(400px, 0px);
+    transform: translate(200px, 0px);
     opacity: 0.3;
   }
 
@@ -116,7 +116,7 @@ header h2 {
   }
 
   50% {
-    transform: translate(200px, 0px);
+    transform: translate(100px, 0px);
     opacity: 0.5;
   }
 
@@ -128,7 +128,7 @@ header h2 {
 
 @keyframes movingBoxRight {
   0% {
-    transform: translate(-400px, 0px);
+    transform: translate(-200px, 0px);
     opacity: 0.3;
   }
 
@@ -137,7 +137,7 @@ header h2 {
   }
 
   50% {
-    transform: translate(-200px, 0px);
+    transform: translate(-100px, 0px);
     opacity: 0.5;
   }
 
@@ -353,6 +353,10 @@ header h2 {
     display: block;
   }
 
+  contents__content {
+    height: 70vh;
+  }
+
   .contents__active {
     flex-direction: column;
   }
@@ -391,5 +395,49 @@ header h2 {
   .contents__works--imgs {
     width: 100px;
     height: 100px;
+  }
+}
+
+@media screen and (max-width: 480) {
+  @keyframes movingBoxLeft {
+    0% {
+      transform: translate(50px, 0px);
+      opacity: 0.3;
+    }
+
+    25% {
+      opacity: 0.4;
+    }
+
+    50% {
+      transform: translate(25px, 0px);
+      opacity: 0.5;
+    }
+
+    100% {
+      transform: translate(0px, 0px);
+      opacity: 0.8;
+    }
+  }
+
+  @keyframes movingBoxRight {
+    0% {
+      transform: translate(-100px, 0px);
+      opacity: 0.3;
+    }
+
+    25% {
+      opacity: 0.4;
+    }
+
+    50% {
+      transform: translate(-50px, 0px);
+      opacity: 0.5;
+    }
+
+    100% {
+      transform: translate(0px, 0px);
+      opacity: 0.8;
+    }
   }
 }

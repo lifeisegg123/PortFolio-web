@@ -71,7 +71,7 @@ function handleModalClick() {
         vidDiv.appendChild(vid);
       });
       vidDiv.className = "modal__viddiv";
-      modalDiv.appendChild(videoDiv);
+      modalDiv.appendChild(vidDiv);
     }
     modalDiv.className = "modal";
     modalSection.appendChild(modalDiv);

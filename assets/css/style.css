@@ -178,17 +178,24 @@ header h2 {
 }
 
 .contents__texts {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
   padding-left: 20px;
 }
 
 .contents__texts h1 {
-  font-size: 20px;
+  font-size: 1.3rem;
   white-space: nowrap;
 }
 
 .contents__texts h2 {
   text-align: center;
   padding: 30px 0px;
+}
+.contents__texts p {
+  padding-left: 2vw;
+  font-size: 0.9rem;
 }
 
 .contents__ability--title {
@@ -202,9 +209,9 @@ header h2 {
 }
 
 .contents__icons {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 7vw;
+  height: 8vh;
+  border-radius: 30%;
   padding: 10px;
 }
 
@@ -221,8 +228,8 @@ header h2 {
 
 .contents__works--imgs {
   padding-bottom: 15px;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 35%;
 }
 
@@ -278,8 +285,15 @@ header h2 {
 }
 
 .modal__img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
+  padding: 20px 40px;
+  border-radius: 40%;
+}
+
+.modal__vid {
+  width: 150px;
+  height: 150px;
   padding: 20px 40px;
   border-radius: 40%;
 }

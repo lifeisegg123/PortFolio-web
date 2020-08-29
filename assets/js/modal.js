@@ -1,5 +1,5 @@
 const modal = document.querySelector(".contents__modal");
-const modalBtn = document.querySelector("#jsModalBtn");
+const modalBtn = document.querySelectorAll("#jsModalBtn");
 const modalOverlay = document.querySelector(".contents__modal--overlay");
 const modalSection = document.querySelector(".contents__modal--content");
 
@@ -16,11 +16,11 @@ const autonomousShip = {
   name: "autonomousShip",
   imgs: ["/PortFolio-web/assets/img/autonomous_ship1.jpg"],
   vids: ["/PortFolio-web/assets/video/autonomous_ship.mp4"],
-  texts: "얼굴을 인식하여 엣지를 추출한 후 영상을 탐색하여 그림을 그리는 로봇",
-  link: "https://github.com/lifeisegg123/delta_robot",
+  texts: "2020 Kaboat 대회 참가",
+  link: "https://github.com/lifeisegg123/autonomous_ship",
 };
 
-const modalList = [deltaRB];
+const modalList = [deltaRB, autonomousShip];
 
 function handleModalClick() {
   modal.classList.remove("hidden");
@@ -29,12 +29,12 @@ function handleModalClick() {
   const name = event.target.alt;
   const title = document.createElement("h2");
   const imgDiv = document.createElement("div");
-  const videoDiv = document.createElement("div");
+  const vidDiv = document.createElement("div");
   const texts = document.createElement("p");
   const aTag = document.createElement("a");
 
   let targetModal;
-
+  console.log(name);
   for (let i = 0; i < modalList.length; i++) {
     if (name == modalList[i].name) {
       targetModal = modalList[i];
@@ -68,8 +68,9 @@ function handleModalClick() {
         const vid = document.createElement("video");
         vid.src = `${value}`;
         vid.className = "modal__vid";
-        videoDiv.appendChild(vid);
+        vidDiv.appendChild(vid);
       });
+      vidDiv.className = "modal__viddiv";
       modalDiv.appendChild(videoDiv);
     }
     modalDiv.className = "modal";
@@ -78,12 +79,15 @@ function handleModalClick() {
 }
 
 function handleModalOverlayClick() {
+  modalSection.removeChild(modalSection.childNodes[0]);
   modal.classList.add("hidden");
   modal.classList.remove("tempModal");
 }
 
 function init() {
-  modalBtn.addEventListener("click", handleModalClick);
+  for (let i = 0; i < modalBtn.length; i++) {
+    modalBtn[i].addEventListener("click", handleModalClick);
+  }
   modalOverlay.addEventListener("click", handleModalOverlayClick);
 }
 init();

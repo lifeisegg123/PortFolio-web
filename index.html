@@ -1,99 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9efce102ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>PortFolios Lee.J.J</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/9efce102ee.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <title>PortFolios Lee.J.J</title>
-</head>
-
-<body>
-  <header id="home">
-    <h1>PortFolios</h1>
-    <h2>Lee.J.J</h2>
-  </header>
-  <nav class="nav">
-    <i class="fas fa-bars nav__hamburger"></i>
-    <ul class="nav__list">
-      <li>
-        <button class="nav__btn nav__active" id="jsNavBtn">
-          Introduction
-        </button>
-      </li>
-      <li><button class="nav__btn" id="jsNavBtn">Ability</button></li>
-      <li><button class="nav__btn" id="jsNavBtn">Works</button></li>
-    </ul>
-  </nav>
-  <div class="contents">
-    <button class="contents__btn" id="jsLeftBtn">
-      <i class="fas fa-arrow-circle-left"></i>
-    </button>
-    <div class="slides">
-      <section class="contents__content contents__active jsIntroduction" id="jsSlide">
-        <div class="contents__keywords">Who I Am</div>
-        <div class="contents__texts">
-          <h1>개발자가 되기 위해</h1>
-          <br />
-          <p>
-            교내 로봇 동아리에서 프로그래밍을 하게 되어 프로그래밍에 흥미를 갖기 시작하였고 동아리 내에서 진행 하는 프로젝트외에도 개인적으로 웹 개발에 대하여 공부하고 있습니다.
-          </p>
-        </div>
-      </section>
-      <section class="contents__content jsAbility" id="jsSlide">
-        <div class="contents__keywords contents__ability--title">
-          Ablility
-        </div>
-        <div class="contents__texts">
-          <section>
-            <h2>Languages</h2>
-            <img src="assets/img/c++.png" alt="C++" class="contents__icons" />
-            <img src="assets/img/python.png" alt="Python" class="contents__icons" />
-            <img src="assets/img/html.png" alt="HTML" class="contents__icons" />
-            <img src="assets/img/css.png" alt="CSS" class="contents__icons" />
-            <img src="assets/img/js.png" alt="JavaScript" class="contents__icons" />
-          </section>
-          <section>
-            <h2>ETC</h2>
-            <img src="assets/img/ros.png" alt="ROS" class="contents__icons" />
-          </section>
-        </div>
-      </section>
-      <section class="contents__content jsWorks" id="jsSlide">
-        <div class="contents__keywords contents__works--title">Works</div>
-        <div class="contents__texts">
-          <section class="contents__works--content" id="jsModalBtn">
-            <img src="assets/img/delta1.jpg" alt="deltaRB" class="contents__works--imgs" />
-            <p>Delta Robot</p>
-          </section>
-          <section class="contents__works--content" id="jsModalBtn">
-            <img src="assets/img/autonomous_ship1.png" alt="autonomousShip" class="contents__works--imgs" />
-            <p>Autonomous Ship</p>
-          </section>
-        </div>
-        <div class="contents__modal hidden">
-          <div class="contents__modal--overlay">
-            <section class="contents__modal--content"></section>
+  <body>
+    <header id="home">
+      <h1>PortFolios</h1>
+      <h2>Lee.J.J</h2>
+    </header>
+    <nav class="nav">
+      <i class="fas fa-bars nav__hamburger"></i>
+      <ul class="nav__list">
+        <li>
+          <button class="nav__btn nav__active" id="jsNavBtn">
+            Introduction
+          </button>
+        </li>
+        <li><button class="nav__btn" id="jsNavBtn">Ability</button></li>
+        <li><button class="nav__btn" id="jsNavBtn">Works</button></li>
+      </ul>
+    </nav>
+    <div class="contents">
+      <button class="contents__btn" id="jsLeftBtn">
+        <i class="fas fa-arrow-circle-left"></i>
+      </button>
+      <div class="slides">
+        <section
+          class="contents__content contents__active jsIntroduction"
+          id="jsSlide"
+        >
+          <div class="contents__keywords">Who I Am</div>
+          <div class="contents__texts">
+            <h1>개발자가 되기 위해</h1>
+            <br />
+            <p>
+              교내 로봇 동아리에서 프로그래밍을 하게 되어 프로그래밍에 흥미를
+              갖기 시작하였고 동아리 내에서 진행 하는 프로젝트외에도 개인적으로
+              웹 개발에 대하여 공부하고 있습니다.
+            </p>
           </div>
-        </div>
-      </section>
+        </section>
+        <section class="contents__content jsAbility" id="jsSlide">
+          <div class="contents__keywords contents__ability--title">
+            Ablility
+          </div>
+          <div class="contents__texts">
+            <section>
+              <h2>Languages</h2>
+              <img src="assets/img/c++.png" alt="C++" class="contents__icons" />
+              <img
+                src="assets/img/python.png"
+                alt="Python"
+                class="contents__icons"
+              />
+              <img
+                src="assets/img/html.png"
+                alt="HTML"
+                class="contents__icons"
+              />
+              <img src="assets/img/css.png" alt="CSS" class="contents__icons" />
+              <img
+                src="assets/img/js.png"
+                alt="JavaScript"
+                class="contents__icons"
+              />
+            </section>
+            <section>
+              <h2>ETC</h2>
+              <img src="assets/img/ros.png" alt="ROS" class="contents__icons" />
+            </section>
+          </div>
+        </section>
+        <section class="contents__content jsWorks" id="jsSlide">
+          <div class="contents__keywords contents__works--title">Works</div>
+          <div class="contents__texts">
+            <section class="contents__works--content" id="jsModalBtn">
+              <img
+                src="assets/img/delta1.jpg"
+                alt="deltaRB"
+                class="contents__works--imgs"
+              />
+              <h2>Delta Robot</h2>
+            </section>
+            <section class="contents__works--content" id="jsModalBtn">
+              <img
+                src="assets/img/autonomous_ship1.png"
+                alt="autonomousShip"
+                class="contents__works--imgs"
+              />
+              <h2>Autonomous Ship</h2>
+            </section>
+          </div>
+          <div class="contents__modal hidden">
+            <div class="contents__modal--overlay">
+              <section class="contents__modal--content"></section>
+            </div>
+          </div>
+        </section>
+      </div>
+      <button class="contents__btn" id="jsRightBtn">
+        <i class="fas fa-arrow-circle-right"></i>
+      </button>
     </div>
-    <button class="contents__btn" id="jsRightBtn">
-      <i class="fas fa-arrow-circle-right"></i>
-    </button>
-  </div>
-  <footer class="contact" id="contact">
-    <ul>
-      <li><span>Phone </span><span>010-5499-9316</span></li>
-      <li><span>E-Mail </span><span>leejj2002@naver.com</span></li>
-    </ul>
-  </footer>
-  <script src="assets/js/slide.js"></script>
-  <script src="assets/js/navbuttons.js"></script>
-  <script src="assets/js/modal.js"></script>
-  <script src="assets/js/menubar.js"></script>
-</body>
-
+    <footer class="contact" id="contact">
+      <ul>
+        <li><span>Phone </span><span>010-5499-9316</span></li>
+        <li><span>E-Mail </span><span>leejj2002@naver.com</span></li>
+      </ul>
+    </footer>
+    <script src="assets/js/slide.js"></script>
+    <script src="assets/js/navbuttons.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/menubar.js"></script>
+  </body>
 </html>

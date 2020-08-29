@@ -12,6 +12,15 @@ const deltaRB = {
   texts: "얼굴을 인식하여 엣지를 추출한 후 영상을 탐색하여 그림을 그리는 로봇",
   link: "https://github.com/lifeisegg123/delta_robot",
 };
+const autonomousShip = {
+  name: "autonomousShip",
+  imgs: [
+    "/PortFolio-web/assets/img/autonomous_ship1.jpg",
+  ],
+  vids: ["/PortFolio-web/assets/video/autonomous_ship.mp4"],
+  texts: "얼굴을 인식하여 엣지를 추출한 후 영상을 탐색하여 그림을 그리는 로봇",
+  link: "https://github.com/lifeisegg123/delta_robot",
+};
 
 const modalList = [deltaRB];
 
@@ -39,12 +48,14 @@ function handleModalClick() {
     title.className = "modal__title";
     texts.innerText = targetModal.texts;
     texts.className = "modal__texts";
-    targetModal.imgs.forEach((value) => {
-      const img = document.createElement("img");
-      img.src = `${value}`;
-      img.className = "modal__img";
-      imgDiv.appendChild(img);
-    });
+    if (targetModal.imgs) {
+      targetModal.imgs.forEach((value) => {
+        const img = document.createElement("img");
+        img.src = `${value}`;
+        img.className = "modal__img";
+        imgDiv.appendChild(img);
+      });
+    }
     imgDiv.className = "modal__imgdiv";
     aTag.innerText = "Source Link";
     aTag.href = targetModal.link;

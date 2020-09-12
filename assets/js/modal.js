@@ -71,7 +71,6 @@ function handleModalClick() {
         vid.src = `${value}`;
         vid.className = "modal__vid";
         vid.autoplay = true;
-        vid.controls = true;
         vidDiv.appendChild(vid);
       });
       vidDiv.className = "modal__viddiv";

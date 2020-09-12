@@ -28,6 +28,7 @@ function handleModalClick() {
   const modalDiv = document.createElement("div");
   const name = event.target.alt;
   const title = document.createElement("h2");
+  const mediaDiv = document.createElement("div");
   const imgDiv = document.createElement("div");
   const vidDiv = document.createElement("div");
   const texts = document.createElement("p");
@@ -53,6 +54,7 @@ function handleModalClick() {
     aTag.href = targetModal.link;
     aTag.className = "modal__link";
     modalDiv.appendChild(aTag);
+
     if (targetModal.imgs) {
       targetModal.imgs.forEach((value) => {
         const img = document.createElement("img");
@@ -61,18 +63,21 @@ function handleModalClick() {
         imgDiv.appendChild(img);
       });
       imgDiv.className = "modal__imgdiv";
-      modalDiv.appendChild(imgDiv);
+      mediaDiv.appendChild(imgDiv);
     }
     if (targetModal.vids) {
       targetModal.vids.forEach((value) => {
         const vid = document.createElement("video");
         vid.src = `${value}`;
         vid.className = "modal__vid";
+        vid.autoplay = true;
         vidDiv.appendChild(vid);
       });
       vidDiv.className = "modal__viddiv";
-      modalDiv.appendChild(vidDiv);
+      mediaDiv.appendChild(vidDiv);
     }
+    mediaDiv.className = "modal__media";
+    modalDiv.appendChild(mediaDiv);
     modalDiv.className = "modal";
     modalSection.appendChild(modalDiv);
   }

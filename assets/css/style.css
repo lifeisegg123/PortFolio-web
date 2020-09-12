@@ -284,6 +284,12 @@ header h2 {
   align-items: center;
 }
 
+.modal__media {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .modal__img {
   width: 150px;
   height: 150px;

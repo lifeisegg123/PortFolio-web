@@ -14,7 +14,7 @@ const deltaRB = {
 };
 const autonomousShip = {
   name: "autonomousShip",
-  imgs: ["/PortFolio-web/assets/img/autonomous_ship1.jpg"],
+  imgs: ["/PortFolio-web/assets/img/autonomous_ship1.png"],
   vids: ["/PortFolio-web/assets/video/autonomous_ship.mp4"],
   texts: "2020 Kaboat 대회 참가",
   link: "https://github.com/lifeisegg123/autonomous_ship",
@@ -71,6 +71,7 @@ function handleModalClick() {
         vid.src = `${value}`;
         vid.className = "modal__vid";
         vid.autoplay = true;
+        vid.controls = true;
         vidDiv.appendChild(vid);
       });
       vidDiv.className = "modal__viddiv";

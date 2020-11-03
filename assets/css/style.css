@@ -363,15 +363,7 @@ header h2 {
 .contact ul li span {
   padding: 0px 10px;
 }
-@media screen and (max-width: 1024px) {
-  .contents__icons {
-    width: 50px;
-    height: 50px;
-  }
-  .contents__modal--content {
-    width: 600px;
-  }
-}
+
 @media screen and (max-width: 768px) {
   header h1 {
     white-space: nowrap;
